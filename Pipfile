@@ -15,6 +15,7 @@ pandas = "*"
 sklearn = "*"
 category-encoders = "*"
 scikit-learn = "==0.20.3"
+joblib = "*"
 
 [requires]
 python_version = "3.7"
