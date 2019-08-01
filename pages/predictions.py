@@ -6,6 +6,7 @@ from dash.dependencies import Input, Output
 
 from app import app
 
+!pip install joblib
 from joblib import load
 pipeline = load('assets/medicare.joblib')
 
