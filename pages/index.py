@@ -29,28 +29,22 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Value Proposition
+            ## Estimate your out-of-pocket Medicare costs.
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            Regulations, supply and other factors can cause differences in providers' costs across state lines. Unfortunately, the prices of medical care aren't displayed like the prices of products on Amazon.
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
-
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+            This app estimates the out-of-pocket costs for those on Medicare based on the type of ailment you're seeking treatment for and which state you live in.
 
             """
         ),
-        dcc.Link(dbc.Button('Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Estimate Medicare Costs', color='primary'), href='/predictions')
     ],
     md=4,
 )
 
-gapminder = px.data.gapminder()
-fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-           hover_name="country", log_x=True, size_max=60)
-
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig),
+        html.Img(src='assets/insurance.jpg', className='img-fluid')
     ]
 )
 
