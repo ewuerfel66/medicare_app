@@ -11,8 +11,8 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Insights
-            The two-feature Partial Dependence Plot (PDP) to the right shows how your diagnosis and state combine to influence prices.
+            # Insights
+            The two-feature Partial Dependence Plot (PDP) to the right shows how your diagnosis and state combine to influence prices. The plots on this page are still encoded, but I've included a key below in case you'd like to decode any observations.
             
             The color of each box represents what medicare beneficiaries can expect to pay out-of-pocket for a given diagnosis in a given state. From the plot, we can see that Orthopedics (column 6) is consistently the most expensive while Respiratory issues (column 3) are consistently the least expensive.
             
@@ -24,9 +24,9 @@ column1 = dbc.Col(
             
             The minimum at 3 (Respiratory) and maximum at 6 (Orthopedic) confirm our suspicion that Respiratory issues are the least expensive while Orthopedic issues are the most expensive. Surprisingly, Neurological (1) diagnoses didn't come with a considerably higher price than average, while Circulatory (4) and Digestive (5) were slightly expensive.
             
-            ## Key
+            # Key
             
-            ### Diagnosis
+            #### Diagnosis
             
             * Neurological:1
             * Other:2
@@ -35,7 +35,7 @@ column1 = dbc.Col(
             * Digestive:5
             * Orthopedic:6
             
-            ## State
+            #### State
 
             * AL:1
             * AK:2

@@ -19,7 +19,7 @@ column1 = dbc.Col(
             
             This tool takes in a category of medical diagnosis and your health care provider's state, then returns an estimate of the out-of-pocket costs one would expect with Medicare coverage. 
             
-            I sorted the top 100 most common diagnoses and procedures into general categories:
+            To create this, I sorted the top 100 most common diagnoses and procedures into the general categories:
                 * Cardiac/Circulatory
                 * Cranial/Neurological
                 * Digestive
@@ -27,9 +27,11 @@ column1 = dbc.Col(
                 * Respiratory
                 * Other
 
-            These categories were tuned to be general enough so that one could reasonably guess which category your diagnosis might fall into before getting an official diagnosis, yet detailed enough to capture the wide variance among out-of-pocket costs.
+            These categories were tuned to be general enough so that one could reasonably guess which category your diagnosis might fall into without a doctor's opinion, yet detailed enough to capture the wide variance among out-of-pocket costs.
             
             Out-of-pocket costs can be found by subtracting medicare coverage from net price for each diagnosis. Using the category of diagnosis and the provider's state, I trained a random forest regressor to predict the out-of-pocket costs.
+            
+            Due to the simplicity of the inputs, this model has a mean absolute error of about $680. So take these estimates with a grain of salt. This tool does well to get you in the ballpark of what you might expect to pay. Models trained with uncategorized diagnoses (assumes the consumer knows their exact diagnosis) only reduced mean absolute error to about $630, so we didn't lose much resolution by categorizing the diagnoses.
             
             There's a remarkable lack of transparency in the health care system, which is further confounded by the inherent uncertainty in the nature of medicine. Hopefully this tool can provide a bit more information to Medicare beneficiaries about their expected costs.
             
