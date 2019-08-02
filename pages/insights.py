@@ -24,7 +24,8 @@ column1 = dbc.Col(
 
 column3 = dbc.Col(
     [
-        html.Img(src='assets/pdp_interact.png', className='img-fluid')
+        html.Img(src='assets/pdp_interact.png', className='img-fluid'),
+        html.Img(src='assets/diagnosis_pdp.png', className='img-fluid')
     ]
 )
 
