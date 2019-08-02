@@ -31,9 +31,9 @@ column1 = dbc.Col(
         
             ## Estimate your out-of-pocket Medicare costs.
 
-            Regulations, supply and other factors can cause differences in providers' costs across state lines. Unfortunately, the prices of medical care aren't displayed like the prices of products on Amazon.
+            Regulations, location and a variety of other factors can cause huge differences in the price that people pay for health care services. Unfortunately, the final price you pay for medical services isn't displayed like the price of a toaster on Amazon.
 
-            This app estimates the out-of-pocket costs for those on Medicare based on the type of ailment you're seeking treatment for and which state you live in.
+            Consumers often go into a doctor's office or hospital having little-to-no idea how much they'll actually end up paying. This app estimates the out-of-pocket costs for those on Medicare based on the type of ailment you're seeking treatment for and which state you live in.
 
             """
         ),
